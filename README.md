@@ -2,12 +2,9 @@
 
 Different presentations
 
-### Time
+### [Time](https://morten-andersen.github.io/presentations/time.html)
 
 A presentation on time and calendars
-
-Available as a reveal.js [presentation - time](https://morten-andersen.github.io/presentations/time.html)
-
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
