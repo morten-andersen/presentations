@@ -82,6 +82,7 @@ Note: Maybe the division of hours into minutes is originating from that.
 #### What year are we in?
 
 * 2020 AD
+* 2013 AD
 * 1399 SH
 * 1422 AH
 * AM 5781
@@ -91,6 +92,7 @@ Note: Maybe the division of hours into minutes is originating from that.
 
 Note:
 * AD Anno Domini - Year of the Lord
+* 2013 Ethopian Calendar
 * SH/AH Solar/Anno Hijri
 * AM Anno Mundi - Year after creation
 * RE - Year of the Revolution
@@ -382,10 +384,29 @@ But, wait, the math doesn't match
   * Same epoch as the Lunar Hijri - 622 BC
   * Current Year 1399 SH
 
+Note:
+* the Persian calendar had a different epoch in 1976-1979 (Cyrus the Great)
+* overnight went from year 1355 to 2535
+* reverting in 1979 with the revolution
+
 
 #### Lunisolar Calendars
 
-MISSING
+* combination of Solar and Lunar based calendars
+* leap *months*
+* The Hebraic calendar (AM)
+  * normal years are 353-355 days
+  * every second or third year are leap years
+  * 13 months, 383-385 days
+  * cycles of 19 years. 7 are leap years
+  * current year AM 5780
+
+Note:
+* the Chinese calendar is also Lunisolar
+* current year is 4717 (or 4657)
+* cycles of 60 years.
+* currently in the 78. cycle. Began in 1984
+* also 12 year cycles with animal names
 
 
 
@@ -467,15 +488,6 @@ Oscillations of caesium-133 atom
 Note: SI = *Système international* - the International System of Units
 
 
-![Timesynchronization by plane](./time/images/hp-timesync-1.png)
-
-Note:
-[HP Magazine - correlation of time](https://www.hpl.hp.com/hpjournal/pdfs/IssuePDFs/1965-04.pdf)
-
-
-![Timesynchronization by plane](./time/images/hp-timesync-2.png)
-
-
 #### [TAI](https://en.wikipedia.org/wiki/International_Atomic_Time) - International Atomic Time
 
 Average of time from 400 atomic clocks around the world
@@ -483,6 +495,15 @@ Average of time from 400 atomic clocks around the world
 Reported as [Julian days](https://en.wikipedia.org/wiki/Julian_day) and the Gregorian calendar are used
 
 Note: *temps atomique international*
+
+
+![Timesynchronization by plane](./time/images/hp-timesync-1.png)
+
+Note:
+[HP Magazine - correlation of time](https://www.hpl.hp.com/hpjournal/pdfs/IssuePDFs/1965-04.pdf)
+
+
+![Timesynchronization by plane](./time/images/hp-timesync-2.png)
 
 
 37 seconds ahead of UT1
@@ -578,13 +599,19 @@ Some other day?
 
 * Nepal (last country to settle on a timezone): UTC+05:45
 * Samoa: Skipped December 30, 2011
-* Church: Easter Day must be on the first Sunday after the first Full moon after Spring equinox (*First Council of Nicaea* in 325)
+* Church: Easter Day must be on the
+  * first Sunday after the first full moon after Spring equinox (*First Council of Nicaea* in 325)
 
 Note: Samoa used to be East of the date line, but traded with Australia, China, NZ - all West of the date line.
 
 
 
 # Time is up
+
+
+*The time is always right to do what is right*
+
+ -- Martin Luther King, Jr.
 
 
 #### Resources
