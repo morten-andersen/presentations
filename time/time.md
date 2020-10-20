@@ -1,5 +1,7 @@
 <section data-background="./time/images/wargames-11.jpg">
 
+Note: Countdown from the classic cold war hacker movie from the 80's https://en.wikipedia.org/wiki/WarGames
+
 
 
 <section data-background="./time/images/wargames-01.jpg">
@@ -9,7 +11,7 @@
 # Time
 
 
-#### The Solar System as a giant clock
+#### The Solar System as a Giant Clock
 
 ![orbit](./time/images/orbit.jpg)
 
@@ -64,14 +66,14 @@ Ancient Egypt: Solar clocks used to divide the day in 12 parts. The dusk and daw
 As Egypt is close to Equator the days are 12 hours long all through the year.
 
 
-#### Babylon detour - counting to 12
+#### Babylon Detour - Counting to 12
 
 12 is a special number as you can count to 12 on your fingers on one hand.
 
 ![counting](./time/images/01-counting.png)
 
 
-#### Minutes - counting to 60
+#### Minutes - Counting to 60
 
 Babylon (modern Iraq) used 60 as the base number
 
@@ -79,7 +81,7 @@ Note: Maybe the division of hours into minutes is originating from that.
 
 
 
-#### What year are we in?
+#### What Year are we in?
 
 * 2020 AD
 * 2013 AD
@@ -110,7 +112,7 @@ In state building: Lets meet for the "law assembly" and talk next year.
 
 
 
-#### The Calendar history
+#### The Calendar History
 
 
 #### Prehistorical
@@ -130,7 +132,7 @@ Originates from ancient Rome
 Note: **Today** Solar based calendar
 
 
-#### The first Roman calender
+#### The first Roman Calender
 
 * before year 500 bc
 * lunar (based on the moon)
@@ -156,7 +158,7 @@ Note: Music
 * 10 = decet
 
 
-#### Roman republic
+#### Roman Republic
 
 * from year 500 bc
 * January and February was added as the first and second month
@@ -189,7 +191,7 @@ The leap year was by error every 3. year the first 36 years
 So with leap year, we are almost correct, but with to many leap years the year will be out of sync after only 127 years again
 
 
-#### The year of Confusion
+#### The Year of Confusion
 
 #### Year 46 BC
 
@@ -198,7 +200,7 @@ Two extra months (and a leap month)
 378 + 67 = 445 days
 
 
-#### The emperor months
+#### The Emperor Months
 
 July was named after the birth month of Julius Caesar
 
@@ -220,7 +222,7 @@ But .. Astronomers use year 0
 Note: More on year zero https://en.wikipedia.org/wiki/Year_zero
 
 
-#### More on year 0 - ISO 8601
+#### More on Year 0 - ISO 8601
 
 Date format: 2020-10-16
 
@@ -233,7 +235,7 @@ Date format: 2020-10-16
 
 
 
-#### Out of sync - again ..
+#### Out of Sync - again ..
 
 In the 1200 century the calendar was a week ahead
 
@@ -263,7 +265,7 @@ Pope Gregor XIII introduces the Gregorian Calendar
 * Only in the Catholic countries
 
 
-#### Denmark was late
+#### Denmark was Late
 
 * Denmark switched in year 1700
 * Ole Rømer (of "light speed" fame) convinced the king
@@ -272,7 +274,7 @@ Pope Gregor XIII introduces the Gregorian Calendar
 * Sunday February 18. to Monday March 1.
 
 
-#### Sweden was a mess
+#### Sweden was a Mess
 
 * a sliding switch
 * skipping 11 leap years in year 1700, 1704, 1708, .. 1740
@@ -288,7 +290,7 @@ Note:
 * 1753 finally switching - skipping 11 days.
 
 
-#### Russia - the 19'th century
+#### Russia - the 19'th Century
 
 In Russia the Gregorian calendar was introduced after the Russian revolution in 1917
 
@@ -306,10 +308,10 @@ The Russian athletes arrived late
 12(!) days
 
 
-#### Other interesting calendars
+#### Other Interesting Calendars
 
 
-#### International Fixed Calendar / 13 months
+#### International Fixed Calendar / 13 Months
 
 Cotsworth - 1902
 
@@ -413,10 +415,10 @@ Note:
 #### Time in Denmark
 
 
-#### You are BREAKING the law
+#### You are BREAKING the Law
 
 
-#### Every single second
+#### Every Single Second
 
 
 #### Local Time - Before 1870
@@ -438,7 +440,7 @@ Note: * the Copenhagen time was used all over for the trains
 
 
 #### 1880
-#### Copenhagen time in the entire country
+#### Copenhagen Time in the Entire Country
 
 Note: by law
 
@@ -532,10 +534,10 @@ the 37 seconds is handled by leap seconds
 Note: [Extrapolations of the difference (TI - UT1)](https://www.ucolick.org/~sla/leapsecs/dutc.html) - *How long will UTC with leap seconds work?*
 
 
-#### Computers, phones, etc. uses UTC
+#### Computers, Phones, etc. uses UTC
 
 
-#### UTC time vs. Danish time
+#### UTC Time vs. Danish Time
 
 * Danish law is not on UTC but on UT1
 * Town Hall clock in Copenhagen switched in 2012
@@ -570,7 +572,7 @@ North Korea (The Juche Calendar) also affected.
 The Republic of China existed between 1912 and 1947
 
 
-#### GPS - Second rollover - [April 6., 2019](https://en.wikipedia.org/wiki/Time_formatting_and_storage_bugs#Second_GPS_rollover)
+#### GPS - Second Rollover - [April 6., 2019](https://en.wikipedia.org/wiki/Time_formatting_and_storage_bugs#Second_GPS_rollover)
 
 * GPS broadcasts date:
   * week number + day of week.
