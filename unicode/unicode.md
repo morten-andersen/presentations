@@ -292,7 +292,7 @@ Note:
 ### So problem solved?
 
 
-locally - on *your* machine - yes
+as long as you never moved a string from one computer to another, or spoke more than one language, it sort of always work
 
 
 #### The Internet
