@@ -15,28 +15,22 @@
   <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
 </header>
 <body style="background-color: #191919; text-align: center;">
-  <div class="reveal" style="margin-top: 30px;">
-    <h4>Example of inconsistent meta tag and http header</h4>
-    <p style="font-size: 30px;">
-    Example text with Scandinavian characters and Euro:
-  </p><p style="margin: auto; padding: 10px; width: 50%; border: 5px solid red; border-radius: 10px;">
-    <em>&aelig;&oslash;&aring;&euro;</em>
-    <span style="font-size: 30px;">
-    is rendered as
-    </span>
-    <em>זרו₪</em>
-    </p><p style="font-size: 30px;">
-    The page is encoded (i.e. saved) in ISO-8859-15
-    </p><p style="font-size: 30px;">
-    It correctly contains the<br>
-    <code>&lt;meta charset="iso-8859-15"/></code><br>
-    meta tag
-    </p><p style="font-size: 30px;">
-    but the HTTP server sends the HTTP header<br>
-    <code>content-type
-  	text/html; charset=utf-8</code><br>
-    which overrides the meta tag set in the file.
+  <div class="reveal" style="margin-top: 30px; font-size: 30px;">
+    <h4 style="font-size: 45px;">Example of inconsistent meta tag and http header</h4>
+    <p>Example text with Scandinavian characters and Euro:</p>
+    <p style="margin: auto; padding: 10px; width: 30%; border: 5px solid red; border-radius: 10px;">
+      <em>&aelig;&oslash;&aring;&euro;</em>
+      is rendered as
+      <em>זרו₪</em>
     </p>
+    <p>&nbsp;</p>
+    <p>The page is encoded (i.e. saved) in ISO-8859-15</p>
+    <p>It correctly contains the meta tag</p>
+    <code style="margin: auto; padding: 10px; border: 5px solid yellow; border-radius: 10px;">&lt;meta charset="iso-8859-15"/></code>
+    <p>&nbsp;</p>
+    <p>but the HTTP server sends the HTTP header</p>
+    <code style="margin: auto; padding: 10px; border: 5px solid yellow; border-radius: 10px;">content-type: text/html; charset=utf-8</code>
+    <p>which overrides the meta tag set in the file.</p>
   </div>
 </body>
 </html>
