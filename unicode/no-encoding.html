@@ -1,8 +1,39 @@
-<html>
+<!doctype html>
+<html lang="en">
 <header>
   <meta charset="iso-8859-15"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Text Encoding, ASCII, Unicode</title>
+
+  <link rel="stylesheet" href="../dist/reset.css">
+  <link rel="stylesheet" href="../dist/reveal.css">
+  <link rel="stylesheet" href="../dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../css/theme/custom.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="../plugin/highlight/monokai.css" id="highlight-theme">
 </header>
-<body>
-  Some text æøå€
+<body style="background-color: #191919; text-align: center;">
+  <div class="reveal" >
+    <h4>Example of inconsistent meta tag and http header</h4>
+    <p style="font-size: 30px;">
+    Example text with Scandinavian characters and Euro:
+    </p><p>
+    <em>Some text æøå€</em>
+    </p><p style="font-size: 30px;">
+    The page is encoded (i.e. saved) in ISO-8859-15
+    </p><p style="font-size: 30px;">
+    It correctly contains the<br>
+    <code>&lt;meta charset="iso-8859-15"/></code><br>
+    meta tag
+    </p><p style="font-size: 30px;">
+    but the HTTP server sends the HTTP header<br>
+    <code>content-type
+  	text/html; charset=utf-8</code><br>
+    which overrides the meta tag set in the file.
+    </p>
+  </div>
+  </div>
 </body>
 </html>
