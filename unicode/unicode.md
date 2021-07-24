@@ -397,6 +397,12 @@ World Wide Web Consortium
 
 
 
+#### We have reached the end of the string
+
+> *It does not make sense to have a string without knowing what encoding it uses*
+
+
+
 #### Resources
 
 * 🔗 [W3C Internationalization Checker](https://validator.w3.org/i18n-checker/)
