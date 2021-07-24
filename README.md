@@ -10,6 +10,10 @@ A presentation on the JavaScript event loop. Held at Penni 2019-10-25 as part of
 
 A presentation on time and calendars. Held at Penni 2020-10-16.
 
+---
+
+Build using the [reveal.js](https://revealjs.com/) presentation framework. [reveal.js License](./reveal.js-LICENSE).
+
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a [Creative Commons Attribution 4.0 International
