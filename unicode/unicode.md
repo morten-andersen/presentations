@@ -405,5 +405,13 @@ World Wide Web Consortium
 
 #### Resources
 
-* 🔗 [W3C Internationalization Checker](https://validator.w3.org/i18n-checker/)
+* 🔗 [Joel on Software - on Unicode](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+* 🔗 [Programming with Unicode](https://unicodebook.readthedocs.io/index.html)
+* 🔗 [Unicode programming, with examples](https://begriffs.com/posts/2019-05-23-unicode-icu.html)
+* 🔗 [StackOverflow - *Unicode Support in Various Programming Languages*](https://stackoverflow.com/questions/1036585/unicode-support-in-various-programming-languages)
 * 🔗 [UTF-8 history - 1992](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt)
+
+
+#### Tools
+
+* 🔗 [W3C Internationalization Checker](https://validator.w3.org/i18n-checker/)
