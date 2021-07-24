@@ -391,6 +391,11 @@ World Wide Web Consortium
 ![hackyourfuture.net source](./unicode/images/w3c-i18n-checker-source.png)
 
 
+#### Example with inconsistent meta and http headers
+
+🔗 <a href="./unicode/no-encoding.html" target="_blank">ISO-8859-15 encoded</a>
+
+
 
 #### Resources
 
