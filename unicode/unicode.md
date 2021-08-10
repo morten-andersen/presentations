@@ -65,6 +65,8 @@ No discussion - period!
 
 -- Alan Kay
 
+Note: So today, we are delving a bit into history to understand this UTF-8
+
 
 #### So what is this UTF-8?
 
@@ -225,6 +227,10 @@ ISO-8859-X
 
 16 parts - ISO-8859-1 to 16
 
+Note:
+* ISO - International Organization for Standardization
+* IEC - International Electrotechnical Commission
+
 
 #### Western European - ISO-8859-1 (Latin 1)
 
@@ -282,6 +288,7 @@ many thousand characters
 solved by 2 byte encodings (CJK) - 65.536 characters
 
 Note:
+* CJK - Chinese, Japanese, Korean
 * Japanese: Nihongo - 128 million people
 * Chinese: Traditional - 1.3 billion people
 * Korean: Hangul - 77 million people
@@ -292,7 +299,10 @@ Note:
 ### So problem solved?
 
 
-as long as you never moved a string from one computer to another, or spoke more than one language, it sort of always work
+as long ..
+as you never moved a string from one computer to another,
+or spoke more than one language,
+it sort of always work
 
 
 #### The Internet
@@ -307,6 +317,204 @@ from computer to computer
 🢃
 
 this setup breaks
+
+
+
+#### Unicode
+
+
+#### One Character Set to Rule Them All
+
+Unicode ➜ a brave effort to create one **single character set** that includes every reasonable writing system on the planet
+
+
+#### Misconception
+
+Unicode is simply a 16-bit code where each character takes 16 bits and therefore there are 65,536 possible characters
+
+🢃
+
+**FALSE**
+
+Note: remember - there are alone more than 70.000 Chinese characters
+
+
+#### Codepoint and Encodings
+
+Note: Unicode is split up in so called codepoints and encodings of these codepoints.
+
+
+#### Code Point
+
+Until now, we’ve assumed that a letter maps to some bits which you can store on disk or in memory
+
+`A ➜ 0100 0001`
+
+
+In Unicode, a letter maps to something called a
+
+**code point**
+
+which is still just a **theoretical concept**
+
+Note: How that code point is represented in memory or on disk is a whole nuther story.
+
+
+Every letter in every alphabet is assigned a code point by the Unicode consortium which is written like
+
+`U+0639`
+
+`U+` means Unicode - number in hexadecimal
+
+`U+0639` is `ع` (Arabic letter Ain).
+`U+0041` is `A`
+
+
+🔗 <a href="https://www.unicode.org/charts/" target="_blank">Unicode charts</a>
+
+
+#### Emojis
+
+Remember this 🤓
+
+Code point `U+1F913`
+
+
+![U+1F913](./unicode/images/U1F913.png)
+
+
+🔗 <a href="https://emojipedia.org/nerd-face/" target="_blank">https://emojipedia.org/nerd-face/</a>
+
+
+#### Unbounded
+
+There is no real limit on the number of letters that Unicode can define
+
+
+#### Hello
+
+Corresponds to these five code points:
+
+`U+0048 U+0065 U+006C U+006C U+006F`
+
+Just a bunch of code points. Numbers, really.
+
+
+We have not said anything about
+
+**how**
+
+to store this in memory / disk / network
+
+
+
+#### Unicode Encodings
+
+How to represent a code point in
+
+memory / disk / network
+
+
+#### Early idea
+
+Store those numbers in two bytes each - UCS-2
+
+So `Hello` becomes
+
+`0048 0065 006C 006C 006F`
+
+but it could also be
+
+`4800 6500 6C00 6C00 6F00`
+
+Note: UCS-2 fixed width used until Unicode 2.0
+
+
+#### Confusion from the start
+
+Already two encodings
+
+
+#### How to differentiate?
+
+big-endian byte order - `FE FF`
+
+little-endian byte order - `FF FE`
+
+🢃
+
+Unicode Byte Order Mark (BOM)
+
+Note: Start the file with the UTF-16 - BOM
+
+
+For a while it seemed like that might be good enough, but programmers were complaining.
+
+> *Look at all those zeros!*
+
+they said, since they were Americans and they were looking at English text which rarely used code points above U+00FF.
+
+
+#### Another encoding - UTF-8
+
+Code point from 0-127 is stored in a single byte
+
+Code points 128 and above are stored using 2, 3 or 4 bytes
+
+![UTF-8](./unicode/images/utf-8.png)
+
+(limited to `10 FFFF` ~ 1.1 mill characters).
+
+Note: brilliant concept of UTF-8. UTF-8 was another system for storing your string of Unicode code points, those magic U+ numbers, in memory using 8 bit bytes.
+
+
+Neat side effect
+
+🢃
+
+English text looks exactly the same in UTF-8 as in ASCII
+
+🢃
+
+Americans don’t notice anything 🇺🇸🤠
+
+
+Only the rest of the world has to jump through hoops
+
+
+#### Unicode Discussions
+
+Is the German letter ß a real letter or just a fancy way of writing ss?
+
+If a letter’s shape changes at the end of the word, is that a different letter? Hebrew says yes, Arabic says no.
+
+
+#### Don't worry
+
+> the smart people at the Unicode consortium have been figuring this out for the last 30 years, accompanied by a great deal of highly political debate, and you don’t have to worry about it. They’ve figured it all out already.
+
+
+#### Demo Time
+
+* ghex
+* iconv
+
+
+```sh
+iconv -f UTF-8 -t ISO-8859-15 utf-8.txt > iso8859.txt
+```
+
+```sh
+iconv -f UTF-8 -t UTF-16 utf-8.txt > utf16.txt
+```
+
+```sh
+ghex utf-8.txt utf16.txt iso8859.txt
+```
+
+Note:
+* -f from encoding
+* -t to encoding
 
 
 
