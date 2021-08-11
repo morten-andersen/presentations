@@ -26,12 +26,18 @@ Still curious on how things *actually* work ⚙️
 
 #### Text Encoding
 
+Note: On the surface one of the things you use daily, but might not know how the computer actually stores text and strings.
+
 
 Wondered why you are adding this on HTML pages?
 
 ```html
 <meta charset="utf-8"/>
 ```
+
+Note:
+* charset?
+* utf-8?
 
 
 received emails like this?
@@ -44,12 +50,13 @@ or like this
 ![mail broken encoding](./unicode/images/mail-example-2.png)
 
 
-when it should have been like this
+when this is how the sender saw it
 
 ![mail good encoding](./unicode/images/mail-example-3.png)
 
 
-#### The Answer
+#### The Answer and Solution
+
 
 Just always use UTF-8
 
@@ -65,13 +72,17 @@ No discussion - period!
 
 -- Alan Kay
 
-Note: So today, we are delving a bit into history to understand this UTF-8
+Note:
+* there was the note about me being an academically interested geek - so lets delve into this
+* Alan Kay - early pioner on Object oriented programming and Turing award winner in 2003
 
 
 #### So what is this UTF-8?
 
 
 #### How is text represented in computer systems
+
+Note: to understand that we will start with talking about how text is represented in computer systems
 
 
 Computers can only understand numbers
@@ -103,11 +114,11 @@ Use only 7 of the 8 bits in a byte
 Numbers 0-127
 
 
-#### 1 byte
+#### 1 byte = 8 bits
 
-![1 byte](./unicode/images/02-byte.jpg)
+![1 byte](./unicode/images/byte.png)
 
-`53` - the number 5
+`64 + 32 + 2 = 98` which is lowercase `b`
 
 
 #### US-ASCII
@@ -118,6 +129,23 @@ Numbers 0-127
 * 10 digits 0-9
 * 32 special characters `?.,()[]{}/\'"`
 * space
+
+
+#### ASCII Table
+
+![ASCII](./unicode/images/01-asciifull.gif)
+
+Note:
+* CR - carriage return
+* LF - line feed
+* Unix + OS X: LF
+* Windows: CR + LF
+* Mac OS: CR
+
+
+#### ASCII Table - old version
+
+![ASCII](./unicode/images/03-ascii.png)
 
 
 #### Fonts - has nothing to do with encoding
@@ -138,16 +166,6 @@ italic *A*
 is the same character as the
 
 bold **A**
-
-
-#### ASCII Table
-
-![ASCII](./unicode/images/01-asciifull.gif)
-
-
-#### ASCII Table - old version
-
-![ASCII](./unicode/images/03-ascii.png)
 
 
 #### Works perfectly in US
@@ -322,6 +340,8 @@ this setup breaks
 
 #### Unicode
 
+Note: First version in 1991
+
 
 #### One Character Set to Rule Them All
 
@@ -393,7 +413,7 @@ There is no real limit on the number of letters that Unicode can define
 
 #### Hello
 
-Corresponds to these five code points:
+Corresponds to these five code points
 
 `U+0048 U+0065 U+006C U+006C U+006F`
 
@@ -448,11 +468,15 @@ Unicode Byte Order Mark (BOM)
 Note: Start the file with the UTF-16 - BOM
 
 
-For a while it seemed like that might be good enough, but programmers were complaining.
+#### On paper - a great idea
+
+but ...
+
+Programmers were complaining
 
 > *Look at all those zeros!*
 
-they said, since they were Americans and they were looking at English text which rarely used code points above U+00FF.
+Note: they said, since they were Americans and they were looking at English text which rarely used code points above U+00FF
 
 
 #### Another encoding - UTF-8
@@ -488,6 +512,8 @@ Is the German letter ß a real letter or just a fancy way of writing ss?
 
 If a letter’s shape changes at the end of the word, is that a different letter? Hebrew says yes, Arabic says no.
 
+Note: scharfes S
+
 
 #### Don't worry
 
@@ -496,8 +522,8 @@ If a letter’s shape changes at the end of the word, is that a different letter
 
 #### Demo Time
 
-* ghex
-* iconv
+* hex editors
+* internationalization conversion - iconv
 
 
 ```sh
@@ -530,6 +556,8 @@ Note:
 |     5.0 | 2006 |    64   |  99.024 |             |
 |     6.0 | 2010 |    93   | 109.384 | 700 emojis  |
 
+Note: Linear B - prehistoric Greek alphabet which it took more than 50 years to decipher
+
 
 #### Version 14 currently in draft
 
@@ -556,6 +584,8 @@ Note:
 World Wide Web Consortium
 
 🔗 [The W3C Internationalization (I18n) Activity](https://www.w3.org/blog/international/)
+
+Note: How do we use this in practice
 
 
 ![W3C - I18n](./unicode/images/w3c-01.png)
@@ -607,7 +637,7 @@ World Wide Web Consortium
 
 #### We have reached the end of the string
 
-> *It does not make sense to have a string without knowing what encoding it uses*
+> *It does not make sense to have a string or a text file without knowing what encoding it uses*
 
 
 
