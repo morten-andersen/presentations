@@ -2,17 +2,21 @@
 
 Different presentations
 
-### [The JavaScript Event Loop](https://morten-andersen.github.io/presentations/eventloop.html)
+### [The JavaScript Event Loop](https://presentations.accel.dk/eventloop.html)
 
 A presentation on the JavaScript event loop. Held at Penni 2019-10-25 as part of a series of internal technical talks given by various employees.
 
-### [Time](https://morten-andersen.github.io/presentations/time.html)
+### [Time](https://presentations.accel.dk/time.html)
 
 A presentation on time and calendars. Held at Penni 2020-10-16.
 
+### [Unicode](https://presentations.accel.dk/unicode.html)
+
+A presentation on text encoding, ASCII, Unicode, etc. Held at 🔗 [HackYourFuture Copenhagen](https://www.hackyourfuture.dk/) 2021-08-12.
+
 ---
 
-Build using the [reveal.js](https://revealjs.com/) presentation framework. [reveal.js license](./reveal.js-LICENSE).
+Build using the 🔗 [reveal.js](https://revealjs.com/) presentation framework. [reveal.js license](./reveal.js-LICENSE).
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
