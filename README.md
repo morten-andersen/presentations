@@ -16,6 +16,15 @@ A presentation on text encoding, ASCII, Unicode, etc. Held at 🔗 [HackYourFutu
 
 ---
 
+Start and run (using [pnpm](https://pnpm.io/))
+
+```bash
+pnpm install
+pnpm start
+```
+
+---
+
 Build using the 🔗 [reveal.js](https://revealjs.com/) presentation framework. [reveal.js license](./reveal.js-LICENSE).
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
